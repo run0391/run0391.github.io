@@ -1,0 +1,63 @@
+html {
+  margin: auto;
+  }
+body {
+  margin: auto;
+  text-align: center;
+}
+/******************
+  HEADER
+*******************/
+#profile-blog {
+  max-height: 15%;
+  max-width: 15%;
+  display: inline-block;
+}
+#banner {
+  display: inline-block;
+  max-width: 60%;
+  width: 480px;
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/******************
+  MAIN
+*******************/
+#top-left {
+  display: inline-block;
+  padding-right: 20px;
+}
+#title {
+  width: 300px;
+}
+#top-right {
+  display: inline-block;
+}
+#date {
+  width:200px;
+}
+#blog {
+  width: 600px;
+  height: 450px;
+
+}
+#main {
+  margin: 20px 0px;
+}
+
+
+
+/******************
+  FOOTER
+*******************/
+#github {
+  display: inline-block;
+  padding-right: 15px;
+}
+#facebook {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
