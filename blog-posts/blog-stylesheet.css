@@ -44,7 +44,9 @@ body {
 
 }
 #main {
-  margin: 20px 0px;
+  margin: 20px 250px;
+  max-width: 50%;
+  text-align: left;
 }
 
 
