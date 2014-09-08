@@ -1,0 +1,66 @@
+body {
+  font-family: 'Source Sans Pro', font-family: 'Source Sans Pro', sans-serif;
+  margin: auto;
+  text-align: center;
+  max-width: 60%;
+}
+li {
+  list-style: none;
+}
+/*********************************
+    HEADER
+**********************************/
+#header {
+  height: 15%;
+}
+
+#profile-photo {
+  max-width: 20%;
+  max-height: 20%;
+  float: left;
+}
+
+#banner-label {
+  float: right;
+  vertical-align: middle;
+  padding-top: 2%;
+  padding-right: 10%;
+}
+/*********************************
+    NAV
+**********************************/
+nav {
+  clear: both;
+  height: 40px;
+  width: 100%;
+  background-color: #22A7F0;
+  color: white;
+}
+
+nav ul li {
+  display: inline;
+  float: right;
+  padding: 10px;
+}
+
+/*********************************
+    SECTION - ASSIGNMENTS
+**********************************/
+#assignments {
+  clear: both;
+  float: left;
+}
+#assignments ul li {
+  padding: 5%;
+}
+
+#margin-photo {
+  max-width: 20%;
+  max-height: 20%;
+}
+/*********************************
+    FOOTER
+**********************************/
+footer {
+  clear: both;
+}
