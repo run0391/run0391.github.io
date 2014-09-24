@@ -43,13 +43,13 @@
 
       <p>Let's look at how we would set this up and then explain what is happening in each line of code</p>
 
-      <img src="../images/Glasses.1.png">
+      <img src="../images/Glasses.1.png" class="centered">
 
       <p>In line 1 we define our class Glasses that essentially says everything in the next block will belong to our class.  We could have named it anything that we liked, but since the objects that we will be building from this will model what we know as glasses, we'll keep the name this way.</p>
 
       <p>Line 2 contains some important information.  We specify what the user must input to initialize, or create, an instance of this object.  We expect three arguments from the user--the frame color, the left eye prescription, and the right eye prescription.  An example of what someone would input is below.</p>
 
-      <img src="../images/ryansglasses.png">
+      <img src="../images/ryansGlasses.png" class="centered">
 
       <p>Notice that there are three arguments to match what we defined in our initialize component of our class.</p>
 
@@ -67,15 +67,15 @@
 
     <p>Below I've written the code for a few instance methods.  Notice that for wear I increment the number of days it has been, for clean I reset it to 0, and replace we have the chance to change the values of our instance variables @left_eye and @right_eye.</p>
 
-    <img src="../images/glasses-with-methods.png">
+    <img src="../images/glasses-with-method.png" class="centered">
 
     <p>If we go to our terminal and use the IRB, after inputing the method in, we can test our code.  Notice in the terminal how we can see we are calling the instance methods on the object that we defined.</p>
 
-    <img src="../images/glasses-terminal.png">
+    <img src="../images/glasses-terminal.png" class="centered">
 
     <p>However, if we were to try to call that same method wear on something that is not an instance of our class Glasses, we will receive an error.</p>
 
-    <img src="../images/wear-error.png">
+    <img src="../images/wear-invalid.png" class="centered">
 
     <p>Thus these methods are only accessible to the class that we define, which makes sense since we don't wear the number 3.</p>
 
