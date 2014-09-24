@@ -1,53 +1,95 @@
-Classes and Glasses
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,200italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <title>DBC | Ryan Brock Jones</title>
+</head>
+<body>
+  <header>
+    <img src="../images/hawaii_bergin.jpg" id="profile-photo">
+    <div id="banner-label">
+      <h2>Ryan Brock Jones</h2>
+      <h3>DBC Work</h3>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="">Contact</a></li>
+      <li><a href="">About Me</a></li>
+      <li><a href="../assignments.html">Assignments</a></li>
+      <li><a href="">Projects</a></li>
+    </ul>
+  </nav>
+  <div id="blog-title">
+    <p id="title">Classes and Glasses</p>
 
-In programming, you'll inevitably come across <b>classes</b>.  Classes are a foundational solution for essentially any software.  Let's look at an example of a class that we'll build, which we'll call Glasses.
+  </div>
+  <div id="date-div">
+    <p id="date">9/24/14</p>
+  </div>
+  <section id="main">
+     <p> In programming, you'll inevitably come across <b>classes</b>.  Classes are a foundational solution for essentially any software.  Let's look at an example of a class that we'll build, which we'll call Glasses.</p>
 
-We all know what glasses are--the ones you wear so you can see better.  In programming we take real-life scenarios and model them with terminology.  With classes there are things that we <i>know</i> and things we can <i>do</i>.
+     <p>We all know what glasses are--the ones you wear so you can see better.  In programming we take real-life scenarios and model them with terminology.  With classes there are things that we <i>know</i> and things we can <i>do</i>.</p>
 
-What do we know about glasses?
-<ul>
-  <li>The frames have a color.</li>
-  <li>The lenses have a prescription.</li>
-</ul>
+     <p>What do we know about glasses?</p>
+      <ul>
+        <li>The frames have a color.</li>
+        <li>The lenses have a prescription.</li>
+      </ul>
 
-The things we know about the class we usually let the user specify.  We can store that information within variables in the class.
+      <p>The things we know about the class we usually let the user specify.  We can store that information within variables in the class.</p>
 
-Let's look at how we would set this up and then explain what is happening in each line of code
+      <p>Let's look at how we would set this up and then explain what is happening in each line of code</p>
 
-<img src="../images/Glasses.1.png">
+      <img src="../images/Glasses.1.png">
 
-In line 1 we define our class Glasses that essentially says everything in the next block will belong to our class.  We could have named it anything that we liked, but since the objects that we will be building from this will model what we know as glasses, we'll keep the name this way.
+      <p>In line 1 we define our class Glasses that essentially says everything in the next block will belong to our class.  We could have named it anything that we liked, but since the objects that we will be building from this will model what we know as glasses, we'll keep the name this way.</p>
 
-Line 2 contains some important information.  We specify what the user must input to initialize, or create, an instance of this object.  We expect three arguments from the user--the frame color, the left eye prescription, and the right eye prescription.  An example of what someone would input is below
+      <p>Line 2 contains some important information.  We specify what the user must input to initialize, or create, an instance of this object.  We expect three arguments from the user--the frame color, the left eye prescription, and the right eye prescription.  An example of what someone would input is below.</p>
 
-<img src="../images/ryansglasses.png">
+      <img src="../images/ryansglasses.png">
 
-Notice that there are three arguments to match what we defined in our initialize component of our class.
+      <p>Notice that there are three arguments to match what we defined in our initialize component of our class.</p>
 
-Once we defined our class, we set <b>instance variables</b>.  These instance variables are stored within the entire class of Glasses.  You'll notice that we have @frame_color and frame_color. The variable @frame_color will be accessible in other methods in our class, whereas frame_color is only accessible within initialize.  Since I may want to know each of those pieces of information later, I'm going to store them as instance variables so they will be accessible later.  I also created an additional variable, days, which we will use to track how many days we have worn the glasses.
+      <p>Once we defined our class, we set <b>instance variables</b>.  These instance variables are stored within the entire class of Glasses.  You'll notice that we have @frame_color and frame_color. The variable @frame_color will be accessible in other methods in our class, whereas frame_color is only accessible within initialize.  Since I may want to know each of those pieces of information later, I'm going to store them as instance variables so they will be accessible later.  I also created an additional variable, days, which we will use to track how many days we have worn the glasses.</p>
 
 
-What can we do with glasses?
-<ul>
-    <li>Wear them.</li>
-    <li>Clean them.</li>
-    <li>Replace the lenses.</li>
-</ul>
+    <p>What can we do with glasses?</p>
+    <ul>
+        <li>Wear them.</li>
+        <li>Clean them.</li>
+        <li>Replace the lenses.</li>
+    </ul>
 
-We can take each of these things and make instance methods to model these actions.  Instance methods are methods that can be called on an instance of an object.  Let's look at an example.
+    <p>We can take each of these things and make instance methods to model these actions.  Instance methods are methods that can be called on an instance of an object.  Let's look at an example.</p>
 
-Below I've written the code for a few instance methods.  Notice that for wear I increment the number of days it has been, for clean I reset it to 0, and replace we have the chance to change the values of our instance variables @left_eye and @right_eye.
+    <p>Below I've written the code for a few instance methods.  Notice that for wear I increment the number of days it has been, for clean I reset it to 0, and replace we have the chance to change the values of our instance variables @left_eye and @right_eye.</p>
 
-<img src="../images/glasses-with-methods.png">
+    <img src="../images/glasses-with-methods.png">
 
-If we go to our terminal and use the IRB, after inputing the method in, we can test our code.  Notice in the terminal how we can see we are calling the instance methods on the object that we defined.
+    <p>If we go to our terminal and use the IRB, after inputing the method in, we can test our code.  Notice in the terminal how we can see we are calling the instance methods on the object that we defined.</p>
 
-<img src="../images/glasses-terminal.png">
+    <img src="../images/glasses-terminal.png">
 
-However, if we were to try to call that same method wear on something that is not an instance of our class Glasses, we will receive an error.
+    <p>However, if we were to try to call that same method wear on something that is not an instance of our class Glasses, we will receive an error.</p>
 
-<img src="../images/wear-error.png">
+    <img src="../images/wear-error.png">
 
-Thus these methods are only accessible to the class that we define, which makes sense since we don't wear the number 3.
+    <p>Thus these methods are only accessible to the class that we define, which makes sense since we don't wear the number 3.</p>
 
-This should cover the core components of defining a class, intializing a class, defining instance variables, and the instance methods within the class.  Hopefully this makes sense!
+    <p>This should cover the core components of defining a class, intializing a class, defining instance variables, and the instance methods within the class.  Hopefully this makes sense!</p>
+  </section>
+ <footer>
+    <img src="../images/Github-Mark-64px.png" href="https://github.com/run0391"alt="github">
+    <img alt="linkedin">
+    <img src="../images/facebook-wrap.png" href="https://facebook.com/ryan.b.jones/96" alt="facebook">
+    <img src="../images/twitter-wrap.png" src="https://twitter.com/ryanbjonesy"alt="twitter">
+
+  </footer>
+</body>
+</html>
+
+
+
