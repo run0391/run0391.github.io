@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,200italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <title>DBC | Ryan Brock Jones</title>
+</head>
+<body>
+  <header>
+    <img src="../images/hawaii_bergin.jpg" id="profile-photo">
+    <div id="banner-label">
+      <h2>Ryan Brock Jones</h2>
+      <h3>DBC Work</h3>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="">Contact</a></li>
+      <li><a href="">About Me</a></li>
+      <li><a href="../assignments.html">Assignments</a></li>
+      <li><a href="">Projects</a></li>
+    </ul>
+  </nav>
+  <div id="blog-title">
+    <p id="title">Inheritance versus Composition</p>
+
+  </div>
+  <div id="date-div">
+    <p id="date">10/2/14</p>
+  </div>
+  <section id="main">
+    <p>
+      When designing multiple related classes in Object-Oriented Programming (OOP), you will inevitably run into scenarios where you have a choice to make between Inheritance and Composition.
+    </p>
+    <h3>What is Inheritance?</h3>
+    <p>The word inheritance in common society is well known.  When someone passes away, someone inherits the possessions of that individual.  In programming, the concept of something "inheriting the possessions" of something else is similarly shared.</p>
+    <p>Suppose we have two classes in Ruby, Class A and Class B, where Class B inherits from Class A.  This means that Class B will inherit, or automatically have, the methods of Class A as they are specified in Class A unless they are overriden.</p>
+    <p>The code below illustrates an example of how a class Square inherits the class Rectangle.</p>
+    <img src="../images/Rectangle-Subl.png" class="centered">
+    <img src="../images/irb-rect.png" class="centered">
+    <p>Notice how in Square we did not define intialize or the area function, it simply inherited those from Rectangle.</p>
+    <p>We could also make an adjustment to our class.  For example, a square only has one side length so it makes sense to only pass in one side length.  See below how that is implemented.</p>
+    <img src="../images/rect-correct.png" class="centered">
+    <img src="../images/irb-rect2.png" class="centered">
+    <p>Notice how we pass in one parameter, and then we take that parameter and pass it into the super class, Rectangle, so we have a heigth and width that we can use for methods such as area.</p>
+    <h3>What is Composition?</h3>
+    <p>The word composition can be informally defined as bringing together various elements to create a larger element.  Thus, in programming when we are using composition, we are taking things that are already made as building blocks to build something else.</p>
+    <p>If we use our prior example of Rectangles and Squares, we can make it so that a Square is <i>composed</i> of a Rectangle.</p>
+    <img src="../images/rect-comp.png" class="centered">
+    <p>Notice that there is no inheritance, but our intialize method creates an instance of another object that we will use as part of our method.</p>
+    <h3>When to use Composition or Inheritance.</h3>
+    <p>The best rule of thumb I have found is to use inheritance you want something to follow an Is-A relationship.  For example, a Square "is a" Rectangle.  We most likely aren't going to run into any issues with any changes that we make to Rectangle as Square would follow those.</p>
+    <p>You may have something where it may be slightly more ambiguous.  For example, if you have a Person class and have someone who is an Employee, they may also be a Supervisor as well.  You could have Employee inherit from person and then Supervisor from Employee, but not everything may align well so you may use composition to build some of these classes.</p>
+    <p>This is far from comprehensive, but hopefully it is illustrative.</p>
+  </section>
+ <footer>
+    <img src="../images/Github-Mark-64px.png" href="https://github.com/run0391"alt="github">
+    <img alt="linkedin">
+    <img src="../images/facebook-wrap.png" href="https://facebook.com/ryan.b.jones/96" alt="facebook">
+    <img src="../images/twitter-wrap.png" src="https://twitter.com/ryanbjonesy"alt="twitter">
+
+  </footer>
+</body>
+</html>
