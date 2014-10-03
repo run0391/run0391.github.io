@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
-  <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,200italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <title>DBC | Ryan Brock Jones</title>
 </head>
-
 <body>
   <header>
-    <img id="profile-blog" src="hawaii_bergin.jpg">
-    <div id="banner">
-      <h1>Blogging for DBC</h1>
+    <img src="../images/hawaii_bergin.jpg" id="profile-photo">
+    <div id="banner-label">
+      <h2>Ryan Brock Jones</h2>
+      <h3>DBC Work</h3>
     </div>
   </header>
-  <section id="top-left">
+  <nav>
+    <ul>
+      <li><a href="">Contact</a></li>
+      <li><a href="">About Me</a></li>
+      <li><a href="../assignments.html">Assignments</a></li>
+      <li><a href="">Projects</a></li>
+    </ul>
+  </nav>
+  <div id="blog-title">
     <p id="title">Margin, Padding, and Border</p>
 
-  </section>
-  <section id="top-right">
+  </div>
+  <div id="date-div">
     <p id="date">9/5/14</p>
-  </section>
+  </div>
   <section id="main">
     <p>Margin, Padding, and Border--what is it?  If you are anything like me, then when you first heard about these they seemed somewhat interchangeable.  The more familiar you become with programming, the more you recognize they are not.
     </p>
     <p> One of the clearest illustrations I have seen of this is through using the Chrome Dev Tools and seeing how a container is layed out.  See the image below
     </p>
-    <img src="layout.png" id="layout-photo">
+    <img src="../images/layout.png" id="layout-photo">
     <p> Notice that the three components, from the inside out, are padding, border, then margin.
     </p>
     <p> How do you use these?  The margin allows you to have distance between your element and the next element.  See the image below.
     </p>
-    <img src="margin.png" id="margin-photo">
+    <img src="../images/margin.png" id="margin-photo">
     <p>Notice margin allows us to specify that we want the background to be all white of our container and put space between the container and the other items.
     </p>
     <p>If we were to use padding on this component, then we are only creating space within the container from the edge of it.  We could potentially have other containers right next to the white of our container.  Below is an use of padding to create space between the image and the top of the container.</p>
-    <img src="padding.png" id="padding-photo">
+    <img src="../images/padding.png" id="padding-photo">
     <p> The last component is border, which is often not used unless people want a fill line to outline the shape of their container.  The border will trace the edge of the container and anything on the outside pertaining to this container will be the margin and the spacing immediately inside of it will be the padding.
     </p>
     <p>Hopefully this has been helpful.  Let me know what could be better within this.</p>
   </section>
-  <footer>
-     <img src="blog-posts/Github-Mark-64px.png" href="https://github.com/run0391"alt="github">
-      <img alt="linkedin">
-      <img src="blog-posts/facebook-wrap.png" href="https://facebook.com/ryan.b.jones/96" alt="facebook">
-      <img src="blog-posts/twitter-wrap.png" src="https://twitter.com/ryanbjonesy"alt="twitter">
+ <footer>
+   <img src="../images/GitHubSmall.png" href="https://github.com/run0391"alt="github">
+    <img src="../images/LinkedInSmall.png" alt="linkedin">
+    <img src="../images/FacebookSmall.png" href="https://facebook.com/ryan.b.jones/96" alt="facebook">
+    <img src="../images/TwitterSmall.png" src="https://twitter.com/ryanbjonesy"alt="twitter">
   </footer>
 </body>
 </html>
