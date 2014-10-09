@@ -37,11 +37,11 @@
     <p>In response to some of the limitations of SQL, NoSQL was developed as a solution.  These grow more horizontally than vertically, so you can add data to various components quickly and easily.  They often use an Object Oriented approach to be able to store the data and thus don't require a predefined schema to add data.</p>
     <p>If you choose to stay with SQL and are going to have a large database, you will want to optimize your queries.  A few principles that you'll want to follow:</p>
     <ul>
-      <li>Use the actual column name instead of a * if you are going to pull the columns</li>
-      <li>Minimize the number of subqueries</li>
-      <li>Use EXISTS instead of DISTINCT when using joins which involves tables having one-to-many relationship</li>
-      <li>Use a Wilcard (e.g., value%) instead of a substring(e.g., substr (COLUMN,1,1) = 'value') </li>
-      <li>Use UNION instead of OR</li>
+      <li class="unedited">Use the actual column name instead of a * if you are going to pull the columns</li>
+      <li class="unedited">Minimize the number of subqueries</li>
+      <li class="unedited">Use EXISTS instead of DISTINCT when using joins which involves tables having one-to-many relationship</li>
+      <li class="unedited">Use a Wilcard (e.g., value%) instead of a substring(e.g., substr (COLUMN,1,1) = 'value') </li>
+      <li class="unedited">Use UNION instead of OR</li>
     </ul>
     <p>If your database isn't as large, then this won't be as crucial.  However, as you will likely encounter a scenario where this is important you'll want to keep these in mind.</p>
   </section>

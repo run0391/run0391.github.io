@@ -123,3 +123,10 @@ footer {
 .centered {
   max-width: 60%;
 }
+/*********************************
+    Specific Blogs - SQL
+**********************************/
+.unedited {
+  list-style: disc;
+  text-align: left;
+}
