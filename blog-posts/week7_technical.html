@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,200italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <title>DBC | Ryan Brock Jones</title>
+</head>
+<body>
+  <header>
+    <img src="../images/hawaii_bergin.jpg" id="profile-photo">
+    <div id="banner-label">
+      <h2>Ryan Brock Jones</h2>
+      <h3>DBC Work</h3>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="">Contact</a></li>
+      <li><a href="">About Me</a></li>
+      <li><a href="../assignments.html">Assignments</a></li>
+      <li><a href="">Projects</a></li>
+    </ul>
+  </nav>
+  <div id="blog-title">
+    <p id="title">SQL and NoSQL</p>
+
+  </div>
+  <div id="date-div">
+    <p id="date">10/8/14</p>
+  </div>
+  <section id="main">
+    <p>SQL (Structured Query Language) is a common language used to manage data in relational databases.  Data is stored in tables with rows being a single record of data and each column contains information for the given record.  If you've ever worked in Excel then you have probably worked with data in this format.</p>
+    <p>Because it is such a straightforward way to understand and store data, it is quite proliferate in its use.  However, it does have some limitations and concerns.</p>
+    <p>One of the most common concerns is that it is susceptible to injection attacks if the user does not properly use the language they are writing in to prevent it.  This can happen if they have a dynamic query where they input the value the individual typed in.  If they individual typed in a value that contained an SQL command they could seriously compromise the database.</p>
+    <p>There are a couple of ways to prevent this--from my research, the main way to do this is to not make the statement dynamic but use a preparing method that will take their input and make sure that it doesn't contain anything that would be detrimental.  You can then pass that value into your query of the system.</p>
+    <p>SQL can also create difficulties as you scale vertically.  It can slow the system to make queries and adding new fields can create down time.</p>
+    <p>In response to some of the limitations of SQL, NoSQL was developed as a solution.  These grow more horizontally than vertically, so you can add data to various components quickly and easily.  They often use an Object Oriented approach to be able to store the data and thus don't require a predefined schema to add data.</p>
+    <p>If you choose to stay with SQL and are going to have a large database, you will want to optimize your queries.  A few principles that you'll want to follow:</p>
+    <ul>
+      <li>Use the actual column name instead of a * if you are going to pull the columns</li>
+      <li>Minimize the number of subqueries</li>
+      <li>Use EXISTS instead of DISTINCT when using joins which involves tables having one-to-many relationship</li>
+      <li>Use a Wilcard (e.g., value%) instead of a substring(e.g., substr (COLUMN,1,1) = 'value') </li>
+      <li>Use UNION instead of OR</li>
+    </ul>
+    <p>If your database isn't as large, then this won't be as crucial.  However, as you will likely encounter a scenario where this is important you'll want to keep these in mind.</p>
+  </section>
+ <footer>
+    <img src="../images/GitHubSmall.png" href="https://github.com/run0391"alt="github">
+    <img src="../images/LinkedInSmall.png" alt="linkedin">
+    <img src="../images/FacebookSmall.png" href="https://facebook.com/ryan.b.jones/96" alt="facebook">
+    <img src="../images/TwitterSmall.png" src="https://twitter.com/ryanbjonesy"alt="twitter">
+  </footer>
+</body>
+</html>
