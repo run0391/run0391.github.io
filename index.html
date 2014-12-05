@@ -2,10 +2,54 @@
 <html>
   <head>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,200italic' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>DBC | Ryan Brock Jones</title>
   </head>
   <body>
+  <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1597302243832467',
+          xfbml      : true,
+          version    : 'v2.1'
+        });
+        $(document).trigger('facebookLoaded');
+      };
+// It must match the Website URL or Canvas URL
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "http://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+
+      $(document).on('facebookLoaded', function() {
+        FB.getLoginStatus(function (response) {
+          debugger;
+        })
+
+        FB.api('/me', {fields: 'last_name'}, function(response) {
+          console.log(response)
+        })
+
+        FB.api(
+          "/'{album-id}",
+          function (response) {
+            if (response && !response.error) {
+              debugger;
+            }
+        })
+      });
+
+    </script>
+    <div
+  class="fb-like"
+  data-send="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
     <header>
       <img src="blog-posts/hawaii_bergin.jpg" id="profile-photo">
       <div id="banner-label">
