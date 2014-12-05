@@ -25,9 +25,12 @@
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
 
+    
       $(document).on('facebookLoaded', function() {
+        debugger;
+
+        
         FB.getLoginStatus(function (response) {
-          debugger;
         })
 
         FB.api('/me', {fields: 'last_name'}, function(response) {
@@ -38,7 +41,7 @@
           "/'{album-id}",
           function (response) {
             if (response && !response.error) {
-              debugger;
+              
             }
         })
       });
